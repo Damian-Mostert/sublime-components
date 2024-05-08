@@ -1,10 +1,10 @@
 {
   "name": "sublime-components",
-  "version": "1.0.32",
+  "version": "1.0.33",
   "description": "Made with create-react-library",
   "author": "Damian-Mostert",
   "license": "MIT",
-  "repository": "Damian-Mostert/smart-components",
+  "repository": "Damian-Mostert/sublime-components",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
