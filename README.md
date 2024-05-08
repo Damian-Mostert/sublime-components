@@ -17,7 +17,6 @@ npm install sublime-components sublime-styles
 @import "sublime-styles/layout.scss";
 @import "sublime-styles/list.scss";
 @import "sublime-styles/popup.scss";
-@import "sublime-styles/slider.scss";
 @import "sublime-styles/table.scss";
 @import "sublime-styles/text.scss";
 @import "sublime-styles/title.scss";
