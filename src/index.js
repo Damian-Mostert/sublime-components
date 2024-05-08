@@ -8,8 +8,6 @@ import { Layout } from './layout/layout.jsx'
 import { List } from './list/list.jsx'
 import { Table } from './table/table.jsx'
 import { Title } from './title/title.jsx'
-import { A, Img } from './tools/A&Img.jsx'
-import { Md, Lg } from './tools/Md&Lg.jsx'
 import { Popup } from './popup/popup.jsx'
 import { Text } from './text/text.jsx'
 
@@ -24,9 +22,5 @@ export {
   Popup,
   Table,
   Title,
-  A,
-  Img,
-  Md,
-  Lg,
   Text
 }
