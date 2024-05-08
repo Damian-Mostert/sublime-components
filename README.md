@@ -36,7 +36,7 @@ function App() {
   const openPopup = async () => {
     await Popup.fire({
       // Specify the content of the popup
-      content: 'Hello, this is a popup!',
+      //...textComponentConfig
       // Optionally provide additional configuration
       // bg: 'dark', // Specify background style
       // canClose: true, // Enable closing the popup by clicking outside
