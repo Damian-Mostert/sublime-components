@@ -1,5 +1,7 @@
 [![NPM](https://img.shields.io/npm/v/smart-components.svg)](https://www.npmjs.com/package/smart-components) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+### part of [react-sublime](https://www.github.com/Damian-Mostert/react-sublime)
+
 ## Install
 
 ```bash

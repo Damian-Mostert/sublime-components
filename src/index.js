@@ -10,6 +10,7 @@ import { Table } from './table/table.jsx'
 import { Title } from './title/title.jsx'
 import { Popup } from './popup/popup.jsx'
 import { Text } from './text/text.jsx'
+import { SublimeApp } from './app/index.jsx'
 
 export {
   Button,
@@ -24,3 +25,5 @@ export {
   Title,
   Text
 }
+
+export default SublimeApp;
