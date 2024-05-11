@@ -93,7 +93,7 @@ export default MyComponent;
 This component renders a layout with flexible configurations.
 
 #### Usage
-types : default, split, split-right, split-left
+types : default, center, split, split-right, split-left
 ```javascript
 import React from 'react';
 import { Layout } from 'sublime-components';
