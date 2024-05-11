@@ -37,7 +37,7 @@ export function PopupBox({
 						>
 							{cancelButton && (
 								<>
-									<div className={`m-auto w-min`}>
+									<div className={`m-auto`} style={{width:"100%"}}>
 										<Button
 											onClick={() => {
 												Resolve({ canceled: true })
