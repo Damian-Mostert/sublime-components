@@ -10,20 +10,6 @@ npm install sublime-components sublime-styles
 
 ## Usage
 
-### In your app.css
-
-```scss
-@import "sublime-styles/button.scss";
-@import "sublime-styles/form.scss";
-@import "sublime-styles/input.scss";
-@import "sublime-styles/layout.scss";
-@import "sublime-styles/list.scss";
-@import "sublime-styles/popup.scss";
-@import "sublime-styles/table.scss";
-@import "sublime-styles/text.scss";
-@import "sublime-styles/title.scss";
-```
-
 ### Popup Component
 
 This component provides a flexible way to manage popups and modals in React applications.
