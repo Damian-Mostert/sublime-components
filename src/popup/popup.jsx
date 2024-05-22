@@ -1,8 +1,10 @@
+"use client";
+
 import React, { Fragment } from 'react'
 import { useState } from "react";
 
 import { PopupBox } from "./box/box";
-import { Form } from "../form/form";
+import { Form } from "../form/form.tsx";
 //container and contents
 function Contents({ modal, form, resolve, ...props }) {
   if (form) {

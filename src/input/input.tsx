@@ -1,8 +1,25 @@
 import React, { Fragment } from 'react'
-//import Link from "next/link";
+import Link from "next/link";
 import { forwardRef, useImperativeHandle, useRef, useState } from 'react'
 import { HexColorPicker } from 'react-colorful'
 import validator from 'validator'
+/* import {
+  GoogleReCaptchaProvider,
+  GoogleReCaptcha
+} from 'react-google-recaptcha-v3'; */
+
+export interface InputProps{
+  variant?: string,
+  name?: string,
+  value?: any,
+  type?: 'text'|'number'|'cell'|'email'|'password'|'hex'|'select'|'textarea'|'boolean'|'link'|'name'|'date'|'image'|'g-recaptcha',
+  label?:string,
+  require?: boolean,
+  errorMessage?:string,
+  size:'full'|'half'|'half::md::full',
+  className?:string,
+  onChange?:any,
+}
 
 const validatePassword = (pw) => {
   const result =
@@ -22,17 +39,17 @@ function validateDate(dateString) {
 const Input = forwardRef(function Input(
   {
     variant = 'default',
-    name = null,
+    name,
     value = '',
     type = 'text',
-    label = false,
-    require = false,
+    label,
+    require,
     errorMessage = 'This input is required.',
     size = 'full',
     className = '',
     onChange = () => {},
     ...props
-  },
+  } : InputProps,
   ref
 ) {
   const [Value, setValue] = useState(
@@ -41,7 +58,7 @@ const Input = forwardRef(function Input(
 
   const imageRef = useRef()
 
-  const [error, setError] = useState(null)
+  const [error, setError]:any = useState(null)
 
   function validate() {
     if (require) {
@@ -139,6 +156,10 @@ const Input = forwardRef(function Input(
     setValue(!Value)
   }
 
+  const handleVerify = () =>{
+
+  }
+
   return (
     <Fragment>
       <div
@@ -174,7 +195,6 @@ const Input = forwardRef(function Input(
                   <textarea
                     className='input'
                     value={Value}
-                    type={type == 'cell' ? 'phone' : type}
                     onChange={handleInstantChange}
                     style={{ resize: 'none' }}
                   />
@@ -220,25 +240,24 @@ const Input = forwardRef(function Input(
             case 'link':
               return (
                 <>
-                  <a className='input-link' href={Value}>
+                  <Link className='input-link' href={Value}>
                     {label}
-                  </a>
+                  </Link>
                 </>
               )
-            /* case "g-re-captcha":
+            /* case "g-recaptcha":
             return (
               <>
                 {label && <label className="label">{label}</label>}
                 <div className="input-g">
-                  <ReCAPTCHA
-                    sitekey={process.env.G_RECAPTCHA_KEY}
-                    onChange={handleInstantChange}
-                  />
+                  <GoogleReCaptchaProvider reCaptchaKey={String(process.env.NEXT_PUBLIC_G_RE_CAPTCHA_KEY)}>
+                    <GoogleReCaptcha onVerify={handleVerify} />
+                  </GoogleReCaptchaProvider>
                 </div>
                 {error && <div className="input-error">{error}</div>}
               </>
-            );
- */
+            ); */
+
             case 'image':
               return (
                 <>

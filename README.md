@@ -62,7 +62,6 @@ function App() {
 
 export default App;
 ```
-
 ### Button Component
 
 This component renders a button or a link with customizable properties.
@@ -109,7 +108,6 @@ function MyComponent() {
 
 export default MyComponent;
 ```
-
 ### Input Component
 
 This component provides various input fields with validation support.
@@ -139,7 +137,6 @@ function MyForm() {
 
 export default MyForm;
 ```
-
 ### Form Component
 
 This component provides a customizable form with input fields and submission handling.
@@ -179,7 +176,6 @@ function MyForm() {
 
 export default MyForm;
 ```
-
 ### List Component
 
 This component renders a list of items with customizable styles and navigation indicators.
@@ -206,43 +202,6 @@ function MyList() {
 }
 
 export default MyList;
-```
-### Text Component
-
-This component displays text content with optional icon, title, paragraphs, and list.
-
-#### Usage
-
-```javascript
-import React from 'react';
-import { Text } from 'sublime-components';
-
-function MyText() {
-  const paragraphs = [
-    'Paragraph 1',
-    'Paragraph 2',
-    'Paragraph 3'
-  ];
-
-  const listItems = ['Item 1', 'Item 2', 'Item 3'];
-
-  return (
-    <Text
-      icon="exampleIcon"
-      title={{ content: 'Example Title', variant: 'h2' }}
-      pre="Pre-text"
-      text="Main text content"
-      extra="Extra text content"
-      paragraphs={paragraphs}
-      variant="default"
-      align="center"
-      className=""
-      list={listItems}
-    />
-  );
-}
-
-export default MyText;
 ```
 ### Text Component
 

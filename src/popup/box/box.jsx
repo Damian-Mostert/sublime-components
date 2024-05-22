@@ -1,7 +1,7 @@
 
-import { Icon } from '../../icon/icon'
-import { Button } from '../../button/button'
-import { Text } from '../../text/text'
+import { Icon } from '../../icon/icon.tsx'
+import { Button } from '../../button/button.tsx'
+import { Text } from '../../text/text.tsx'
 import React, { Fragment } from 'react'
 //default popup box
 export function PopupBox({

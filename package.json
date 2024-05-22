@@ -1,6 +1,6 @@
 {
-  "name": "sublime-components",
-  "version": "1.0.51",
+  "name": "sublime-components-next",
+  "version": "1.0.18",
   "description": "Made with create-react-library",
   "author": "Damian-Mostert",
   "license": "MIT",
@@ -54,6 +54,7 @@
   ],
   "dependencies": {
     "react-colorful": "^5.6.1",
+    "react-google-recaptcha-v3": "^1.10.1",
     "sass": "^1.77.0",
     "slick-carousel": "^1.8.1",
     "validator": "^13.11.0"
